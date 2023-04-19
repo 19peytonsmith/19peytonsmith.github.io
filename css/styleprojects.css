@@ -1,0 +1,176 @@
+nav {
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+body{
+    font-family: Manrope,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji!important;
+    background-color: #333;
+    background-image: url('../assets/bg.jpg');
+    background-blend-mode:multiply;
+    margin-left: 500px;
+    margin-right: 500px;
+    letter-spacing:1.5px;
+}
+
+nav .right-nav-bar .projects-button{
+    color: #90EE90
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #90EE90;
+}
+
+header{
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+h1{
+    color: #90EE90;
+    font-size: 48px;
+    display: inline;
+}
+
+.header-text {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .green-line {
+    display: inline-block;
+    width: 350px;
+    height: 2px;
+    background-color: #90ee9077;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+
+.projects {
+    display: flex;
+    position: relative;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.projects > div {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.mouthpiece{
+    display: flex;
+    opacity: 1;
+    position: absolute;
+}
+
+.zillow{
+    display: flex;
+    opacity: 0;
+    position: absolute;
+}
+
+.ecommerce{
+    display: flex;
+    opacity: 0;
+    position: absolute;
+}
+
+.sql{
+    display: flex;
+    opacity: 0;
+    position: absolute;
+}
+
+.project-contents{
+    display: block;
+    flex: 1;
+}
+
+.project-image{
+    flex: 1;
+}
+
+.project-title{
+    color: #ADD8E6;
+    padding: 0;
+    margin: 0;
+}
+
+.project-description{
+    color: #DDDDDD;
+    font-size: 20px;
+    background-color: rgb(51, 39, 39);
+    padding: 20px;
+}
+
+p{
+    color: #DDDDDD;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+.projects img{
+    border-radius: 5%;
+    height: 500px;
+}
+
+.project-tech-list{
+    color: #fff;
+    list-style-type: none;
+    display: flex;
+}
+li{
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    margin: 5px;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+
+/* CSS for circle container */
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    }
+
+    /* CSS for circle */
+    .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #DDDDDD;
+    margin: 0 10px;
+    cursor: pointer;
+    }
+
+    /* CSS for active circle */
+    .circle.active {
+    background-color: #2f7eb3;
+    }
+
+svg{
+    color: #fff;
+    height: 24px;
+    width: 24px;
+    transition: 0.3s ease-in
+}
+
+svg:hover{
+    color: #90EE90;
+    transform:translateY(-5px)
+}
