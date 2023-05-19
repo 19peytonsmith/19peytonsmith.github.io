@@ -3,15 +3,15 @@ nav {
     font-size: 20px;
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 10px;
 }
 
 body{
     font-family: Manrope,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji!important;
     background-color: #333;
-    background-image: url('../assets/bg.jpg');
-    background-blend-mode:multiply;
+    background-image: url('../assets/bgwhite.jpg');
+    background-blend-mode:color-dodge;
     margin-left: 500px;
     margin-right: 500px;
     letter-spacing:1.5px;
@@ -39,8 +39,8 @@ a:hover {
 }
 
 header{
+    margin-top: 55px;
     position: relative;
-    margin-top: 100px;
     margin-bottom: 50px;
 }
 
@@ -57,7 +57,7 @@ h1{
   
   .green-line {
     display: inline-block;
-    width: 350px;
+    width: 25%;
     height: 2px;
     background-color: #90ee9077;
     margin-left: 5px;
@@ -109,20 +109,19 @@ h1{
 }
 
 .project-title{
-    color: #ADD8E6;
+    color: #FFFFFF;
     padding: 0;
     margin: 0;
 }
 
 .project-description{
-    color: #DDDDDD;
     font-size: 20px;
     background-color: rgb(51, 39, 39);
     padding: 20px;
 }
 
 p{
-    color: #DDDDDD;
+    color: #CCCCCC;
     font-size: 20px;
     padding: 0;
     margin: 0;
@@ -138,6 +137,7 @@ p{
     display: flex;
 }
 li{
+    padding-right: 10px;
     font-size: 18px;
     letter-spacing: 1.5px;
     margin: 5px;

@@ -10,8 +10,8 @@ nav {
 body{
     font-family: Manrope,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji!important;
     background-color: #333;
-    background-image: url('../assets/bg.jpg');
-    background-blend-mode:multiply;
+    background-image: url('../assets/bgwhite.jpg');
+    background-blend-mode:color-dodge;
     margin-left: 500px;
     margin-right: 500px;
     letter-spacing:1.5px;
@@ -68,10 +68,6 @@ h1{
     color: #fff;
     font-size: 75px;
     margin: 0;
-}
-
-h3{
-    color: #DDDDDD
 }
 p{
     font-weight:300;

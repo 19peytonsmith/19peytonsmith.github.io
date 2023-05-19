@@ -10,8 +10,8 @@ nav {
 body{
     font-family: Manrope,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji!important;
     background-color: #333;
-    background-image: url('../assets/bg.jpg');
-    background-blend-mode:multiply;
+    background-image: url('../assets/bgwhite.jpg');
+    background-blend-mode:color-dodge;
     margin-left: 500px;
     margin-right: 500px;
     letter-spacing:1.5px;
@@ -38,10 +38,6 @@ a:hover {
     color: #90EE90;
 }
 
-.aboutme{
-    margin-top: 75px;
-}
-
 h1{
     font-size: 48px;
     color: #90EE90;
@@ -49,6 +45,7 @@ h1{
 }
 
 header{
+    margin-top: 65px;
     position: relative;
     margin-bottom: 50px;
 }
@@ -60,7 +57,7 @@ header{
   
   .green-line {
     display: inline-block;
-    width: 450px;
+    width: 25%;
     height: 2px;
     background-color: #90ee9077;
     margin-left: 5px;
@@ -91,13 +88,13 @@ img{
   }
 
 .text p{
-    color: #dddddd;
+    color: #cccccc;
     font-size: 17.5px;
     margin: 0;
 }
 
 .left-side p{
-    color: #dddddd;
+    color: #cccccc;
     font-size: 15px;
     margin: 0;
     margin-top: 20px;
