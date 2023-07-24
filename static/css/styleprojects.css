@@ -1,202 +1,328 @@
 nav {
-    color: #fff;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 10px;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
-body{
-    font-family: Manrope,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji!important;
-    background-color: #333;
-    background-image: url('../assets/bgwhite.jpg');
-    background-blend-mode:color-dodge;
-    margin-left: 500px;
-    margin-right: 500px;
-    letter-spacing:1.5px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+body {
+  font-family: Manrope, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji !important;
+  background-color: #333;
+  background-image: url("../assets/bgwhite.jpg");
+  background-blend-mode: color-dodge;
+  margin-left: 26%;
+  margin-right: 26%;
+  letter-spacing: 1.5px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .fade-out {
-    opacity: 0;
-  }
+  opacity: 0;
+}
 
-nav .right-nav-bar .projects-button{
-    color: #90EE90
+nav .right-nav-bar .projects-button {
+  color: #90ee90;
 }
 nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    transition: 1s ease;
-    cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: 1s ease;
+  cursor: pointer;
 }
 
 a:hover {
-    color: #90EE90;
+  color: #90ee90;
 }
 
-header{
-    margin-top: 55px;
-    position: relative;
-    margin-bottom: 50px;
+header {
+  margin-top: 55px;
+  position: relative;
+  margin-bottom: 50px;
 }
 
-h1{
-    color: #90EE90;
-    font-size: 48px;
-    display: inline;
+h1 {
+  color: #90ee90;
+  font-size: 48px;
+  display: inline;
 }
 
 .header-text {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  
-  .green-line {
-    display: inline-block;
-    width: 25%;
-    height: 2px;
-    background-color: #90ee9077;
-    margin-left: 5px;
-    vertical-align: middle;
-  }
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.green-line {
+  display: inline-block;
+  width: 25%;
+  height: 2px;
+  background-color: #90ee9077;
+  margin-left: 5px;
+  vertical-align: middle;
+}
 
 .projects {
-    display: flex;
-    position: relative;
-    transition: opacity 0.5s ease-in-out;
-    z-index: -100;
+  display: flex;
+  position: relative;
+  transition: opacity 0.5s ease-in-out;
+  z-index: -100;
 }
 
 .projects > div {
-    transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
-.mouthpiece{
+.mouthpiece {
+  display: flex;
+  opacity: 1;
+  position: absolute;
+}
+
+.mouthpiece .project-images{
     display: flex;
-    opacity: 1;
-    position: absolute;
+    flex: 0 0 50%; /* Each image takes 50% of the available width */
 }
 
-.zillow{
-    display: flex;
-    opacity: 0;
-    position: absolute;
+.mouthpiece .project-image {
+    max-width: 100%; /* Limit the width of each image to 100% of its container */
+    margin-right: 50px; /* Add some spacing between the images */
+  }
+
+  .mouthpiece .project-contents {
+    flex: 1; /* Take the remaining available width */
+    max-width: 50%!important; /* Limit the maximum width of the project contents */
+    margin-left: -50px;
+  }
+
+.zillow {
+  display: flex;
+  opacity: 0;
+  position: absolute;
 }
 
-.ecommerce{
-    display: flex;
-    opacity: 0;
-    position: absolute;
+.ecommerce {
+  display: flex;
+  opacity: 0;
+  position: absolute;
 }
 
-.sql{
-    display: flex;
-    opacity: 0;
-    position: absolute;
+.sql {
+  display: flex;
+  opacity: 0;
+  position: absolute;
 }
 
-.project-contents{
-    display: block;
-    flex: 1;
+.project-contents {
+  display: block;
+  flex: 1;
 }
 
-.project-image{
-    flex: 1;
+
+.project-image {
+  flex: 1;
 }
 
-.project-title{
-    color: #FFFFFF;
-    padding: 0;
-    margin: 0;
+.project-title {
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
 }
 
-.project-description{
-    font-size: 20px;
-    background-color: rgb(51, 39, 39);
-    padding: 20px;
+.project-description {
+  font-size: 20px;
+  background-color: rgb(51, 39, 39);
+  padding: 20px;
 }
 
-p{
-    color: #CCCCCC;
-    font-size: 20px;
-    padding: 0;
-    margin: 0;
+p {
+  color: #cccccc;
+  font-size: 1.1vw;
+  padding: 0;
+  margin: 0;
 }
-.projects img{
-    border-radius: 5%;
-    height: 500px;
-}
-
-.project-tech-list{
-    color: #fff;
-    list-style-type: none;
-    display: flex;
-}
-li{
-    padding-right: 10px;
-    font-size: 18px;
-    letter-spacing: 1.5px;
-    margin: 5px;
-    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+.projects img {
+  border-radius: 5%;
+  height: 500px;
 }
 
-/* CSS for circle container */
+.project-tech-list {
+  color: #fff;
+  list-style-type: none;
+  display: flex;
+}
+li {
+  padding-right: 10px;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  margin: 5px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+}
+
 .circle-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 50px;
-    left: 0;
-    right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #dddddd;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.circle.active {
+  background-color: #2f7eb3;
+}
+
+svg {
+  color: #fff;
+  height: 24px;
+  width: 24px;
+  transition: 0.3s ease-in;
+  position: relative;
+  z-index: 2;
+}
+
+svg:hover {
+  color: #90ee90;
+  transform: translateY(-5px);
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.youtubelogo img {
+  transition: transform 0.3s ease-in;
+}
+
+.youtubelogo img:hover {
+  filter: invert(50%) sepia(100%) saturate(7313%) hue-rotate(1deg)
+    brightness(104%) contrast(102%);
+  transform: translateY(-5px);
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    h2 {
+      font-size: 40px!important
     }
 
-    /* CSS for circle */
-    .circle {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #DDDDDD;
-    margin: 0 10px;
-    cursor: pointer;
+    h1 {
+      font-size: 40px
     }
 
-    /* CSS for active circle */
-    .circle.active {
-    background-color: #2f7eb3;
+    p{
+        font-size: 12px;
     }
 
-svg{
-    color: #fff;
-    height: 24px;
-    width: 24px;
-    transition: 0.3s ease-in;
-    position: relative; 
-    z-index: 2
-}
+    li{
+        font-size: 10px;
+    }
+    .mouthpiece .project-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 20px;
+      }
+    .mouthpiece .project-contents{
+        max-width: 75%!important;
+    }
 
-svg:hover{
-    color: #90EE90;
-    transform:translateY(-5px)
-}
+    .mouthpiece .project-contents p{
+        font-size: 18px;
+    }
 
-a{
-    display: inline-block;
-    position: relative; 
-    z-index: 1;
-}
+    .mouthpiece .project-images .project-image {
+        max-width: 100%!important;
+      }
+    .mouthpiece{
+        flex-direction: column;
+        align-items: center;
+    }
+    .circle-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 40px;
+        left: 0;
+        right: 0;
+      }
 
-.youtubelogo img{
-    transition: transform 0.3s ease-in;
-}
+      .zillow{
+        flex-direction: column;
+        align-items: center;
+      }
 
-.youtubelogo img:hover{
-    filter: invert(50%) sepia(100%) saturate(7313%) hue-rotate(1deg) brightness(104%) contrast(102%);
-    transform:translateY(-5px)
-}
+      .zillow .project-contents p{
+        font-size: 18px;
+    }
 
-  
+    .zillow .project-contents{
+        max-width: 75%!important;
+        padding-bottom: 20px;
+    }
+
+    .ecommerce{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ecommerce .project-image{
+        padding-bottom: 20px;
+    }
+
+    .ecommerce .project-contents p{
+        font-size: 18px;
+    }
+
+    .ecommerce .project-contents{
+        max-width: 75%!important;
+    }
+
+    .sql{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sql .project-contents p{
+        font-size: 18px;
+    }
+
+    .sql .project-contents{
+        max-width: 75%!important;
+    }
+
+    
+  }
+
+  @media only screen and (max-width: 1366px) and (min-width: 768px) {
+    body {
+      margin-left: 10%;
+      margin-right: 10%;
+      padding-bottom: 50px;
+    }
+    p {
+      font-size: 2vw;
+    }
+  }
