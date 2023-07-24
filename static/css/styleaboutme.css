@@ -148,10 +148,10 @@ li {
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 980px) {
   body {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
     padding-bottom: 50px;
   }
 
@@ -184,13 +184,13 @@ li {
   }
 }
 
-@media only screen and (max-width: 1366px) and (min-width: 768px) {
+@media only screen and (max-width: 1366px) and (min-width: 980px) {
   body {
     margin-left: 10%;
     margin-right: 10%;
     padding-bottom: 50px;
   }
   .text p {
-    font-size: 17.5px;
+    font-size: 14px;
   }
 }

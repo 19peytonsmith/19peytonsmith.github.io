@@ -16,102 +16,104 @@
             <a style="padding-right: 0px" onclick="window.open('static/assets/Peyton_Smith_Resume.pdf')">Resume</a>
         </div>
     </nav>
-    <header>
-        <h1>
-        <span class="header-text">Personal Projects</span>
-        <span class="green-line"></span>
-        </h1>
-    </header>
-    <div class="projects">
-        <div class="mouthpiece">
-            
-            <div class="project-images">
-                <div class="project-image" style="max-width: 30%">
-                    <img src="static/assets/mp1.png">
+    <div class="home">
+        <header>
+            <h1>
+            <span class="header-text">Personal Projects</span>
+            <span class="green-line"></span>
+            </h1>
+        </header>
+        <div class="projects">
+            <div class="mouthpiece">
+        
+                <div class="project-images">
+                    <div class="project-image" id="first-image" style="max-width: 30%">
+                        <img src="static/assets/mp1.png">
+                    </div>
+                    <div class="project-image" id="second-image" style="max-width: 30%;">
+                        <img src="static/assets/mp2.png">
+                    </div>
                 </div>
-                <div class="project-image" style="max-width: 30%; margin-top: 20px;">
-                    <img src="static/assets/mp2.png">
+                <div style="max-width: 50%" class="project-contents">
+                    <p>1.</p>
+                    <div class="project-title">
+                        <h2 style="font-size:2.5vw">Mouthpiece</h2>
+                    </div>
+                    <div class="project-description">
+                        <p>A social media app whose motivation is seamlessly sharing posts, pictures, and videos for a community of those interested in sports. The app has basic social media functionality with some geolocation features.</p>
+                    </div>
+                    <ul class="project-tech-list" style="flex-wrap: wrap"><li>Xcode</li><li>Swift</li><li>Firebase</li><li>Google Maps & Places API</li><li>Figma</li></ul>
+                    <a href="https://web1.eng.famu.fsu.edu/ece/senior_design/2023/team305/index.html" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title>Website</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </a>
                 </div>
             </div>
-            <div style="max-width: 50%" class="project-contents">
-                <p>1.</p>
-                <div class="project-title">
-                    <h2 style="font-size:2.5vw">Mouthpiece</h2>
+            <div class="zillow">
+                <div style="padding-right: 50px;" class="project-contents">
+                    <p>2.</p>
+                    <div class="project-title">
+                        <h2 style="font-size:1.6vw">Zillow Guessing Game</h2>
+                    </div>
+                    <div class="project-description">
+                        <p>Ongoing personal Python web-app project where it fetches a random Zillow listing, displays the info alongside a gallery of all of the pictures and has the user guess the price. </p>
+                    </div>
+                    <ul class="project-tech-list" style="flex-wrap: wrap"><li>Python</li><li>Flask</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>BeautifulSoup</li><li>pandas</li></ul>
+                    <a href="https://github.com/19peytonsmith/Zillow-Project" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
                 </div>
-                <div class="project-description">
-                    <p>A social media app whose motivation is seamlessly sharing posts, pictures, and videos for a community of those interested in sports. The app has basic social media functionality with some geolocation features.</p>
+                <div class="project-image">
+                    <img src="static/assets/zillow.png">
                 </div>
-                <ul class="project-tech-list" style="flex-wrap: wrap"><li>Xcode</li><li>Swift</li><li>Firebase</li><li>Google Maps & Places API</li><li>Figma</li></ul>
-                <a href="https://web1.eng.famu.fsu.edu/ece/senior_design/2023/team305/index.html" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title>Website</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </a>
+            </div>
+            <div class="ecommerce">
+                <div style="flex: 1.5;" class="project-image">
+                    <img style="height:350px; margin-top: 50px;" src="static/assets/ecommerce.png">
+                </div>
+                <div style="max-width: 40%; padding-left: 20px;" class="project-contents">
+                    <p>3.</p>
+                    <div class="project-title">
+                        <h2 style="font-size:1.8vw">C# eCommerce app</h2>
+                    </div>
+                    <div class="project-description">
+                        <p>Starting from a basic console application, I've transformed this project into a 2-sided admin/customer full-stack desktop application with a file system-based database and a working web API to query data used to perform CRUD operations on products within the database. </p>
+                    </div>
+                    <ul class="project-tech-list"><li>C#</li><li>.NET</li><li>XAML</li><li>Swagger</li></ul>
+                    <a href="https://github.com/mills-fsu-csharp-summer2022/eCommerce-Assignment3-PeytonSmith-Su2/tree/eCommerce-Assignment5-PeytonSmith-Su22" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=XN52Kqy6KJs&list=PLdUF-6bQJVSLGV6VD68C6t-vT5NWsDDRA&ab_channel=PeytonSmith" target="_blank" rel="noopener noreferrer" class="youtubelogo">
+                        <img style="height: 24px; padding-left: 10px;"src="static/assets/youtube.png">
+                    </a>
+                </div>
+            </div>
+            <div class="sql">
+                <div style="padding-right: 50px;" style="max-width: 40%" class="project-contents">
+                    <p>4.</p>
+                    <div class="project-title">
+                        <h2 style="font-size:2vw">SQL Multiplayer Game Database</h2>
+                    </div>
+                    <div class="project-description">
+                        <p>Leveraged SQL to plot entities associated to the game including user information, friend data, map/score statistics, and tournament functionality. I also optimized and developed SQL scripts and queries to yield data from various levels of the database architecture.</p>
+                    </div>
+                    <ul class="project-tech-list left" style="flex-wrap: wrap"><li>SQL</li><li>mySQL</li></ul>
+                </div>
+                <div style="flex: 1.2;" class="project-image">
+                    <img src="static/assets/sql.png">
+                </div>
             </div>
         </div>
-        <div class="zillow">
-            <div style="padding-right: 50px;" class="project-contents">
-                <p>2.</p>
-                <div class="project-title">
-                    <h2 style="font-size:1.6vw">Zillow Guessing Game</h2>
-                </div>
-                <div class="project-description">
-                    <p>Ongoing personal Python web-app project where it fetches a random Zillow listing, displays the info alongside a gallery of all of the pictures and has the user guess the price. </p>
-                </div>
-                <ul class="project-tech-list" style="flex-wrap: wrap"><li>Python</li><li>Flask</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>BeautifulSoup</li><li>pandas</li></ul>
-                <a href="https://github.com/19peytonsmith/Zillow-Project" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                </a>
-            </div>
-            <div class="project-image">
-                <img src="static/assets/zillow.png">
-            </div>
-        </div>
-        <div class="ecommerce">
-            <div style="flex: 1.5;" class="project-image">
-                <img style="height:350px; margin-top: 50px;" src="static/assets/ecommerce.png">
-            </div>
-            <div style="max-width: 40%; padding-left: 20px;" class="project-contents">
-                <p>3.</p>
-                <div class="project-title">
-                    <h2 style="font-size:1.8vw">C# eCommerce app</h2>
-                </div>
-                <div class="project-description">
-                    <p>Starting from a basic console application, I've transformed this project into a 2-sided admin/customer full-stack desktop application with a file system-based database and a working web API to query data used to perform CRUD operations on products within the database. </p>
-                </div>
-                <ul class="project-tech-list"><li>C#</li><li>.NET</li><li>XAML</li><li>Swagger</li></ul>
-                <a href="https://github.com/mills-fsu-csharp-summer2022/eCommerce-Assignment3-PeytonSmith-Su2/tree/eCommerce-Assignment5-PeytonSmith-Su22" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                </a>
-                <a href="https://www.youtube.com/watch?v=XN52Kqy6KJs&list=PLdUF-6bQJVSLGV6VD68C6t-vT5NWsDDRA&ab_channel=PeytonSmith" target="_blank" rel="noopener noreferrer" class="youtubelogo">
-                    <img style="height: 24px; padding-left: 10px;"src="static/assets/youtube.png">
-                </a>
-            </div>
-        </div>
-        <div class="sql">
-            <div style="padding-right: 50px;" style="max-width: 40%" class="project-contents">
-                <p>4.</p>
-                <div class="project-title">
-                    <h2 style="font-size:2vw">SQL Multiplayer Game Database</h2>
-                </div>
-                <div class="project-description">
-                    <p>Leveraged SQL to plot entities associated to the game including user information, friend data, map/score statistics, and tournament functionality. I also optimized and developed SQL scripts and queries to yield data from various levels of the database architecture.</p>
-                </div>
-                <ul class="project-tech-list left" style="flex-wrap: wrap"><li>SQL</li><li>mySQL</li></ul>
-            </div>
-            <div style="flex: 1.2;" class="project-image">
-                <img src="static/assets/sql.png">
-            </div>
-        </div>
+        <div class="circle-container">
+            <!-- Circle 1 -->
+            <div class="circle active circle1" onclick="goToPage(1); stopAuto();"></div>
+            <!-- Circle 2 -->
+            <div class="circle circle2" onclick="goToPage(2); stopAuto();"></div>
+            <!-- Circle 3 -->
+            <div class="circle circle3" onclick="goToPage(3); stopAuto();"></div>
+            <!-- Circle 4 -->
+            <div class="circle circle4" onclick="goToPage(4); stopAuto();"></div>
+          </div>
     </div>
-    <div class="circle-container">
-        <!-- Circle 1 -->
-        <div class="circle active circle1" onclick="goToPage(1); stopAuto();"></div>
-        <!-- Circle 2 -->
-        <div class="circle circle2" onclick="goToPage(2); stopAuto();"></div>
-        <!-- Circle 3 -->
-        <div class="circle circle3" onclick="goToPage(3); stopAuto();"></div>
-        <!-- Circle 4 -->
-        <div class="circle circle4" onclick="goToPage(4); stopAuto();"></div>
-      </div>
 
     <!-- JavaScript to handle click event and navigate to pages -->
     <script>
