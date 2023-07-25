@@ -97,10 +97,12 @@ a {
   padding-left: 20px;
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1007px) {
   body {
     margin-left: 10%;
     margin-right: 10%;
+    background-image: url("../assets/bgwhitemobile.jpg");
+    background-size: cover;
   }
   h2 {
     font-size: 25px;

@@ -154,6 +154,11 @@ p {
   height: 500px;
 }
 
+img.border{
+  border: 5px solid #dddddd;
+  padding: 5px;
+}
+
 .project-tech-list {
   color: #fff;
   list-style-type: none;
@@ -220,30 +225,38 @@ a {
   transform: translateY(-5px);
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1007px) {
   body {
     margin-left: 10%;
     margin-right: 10%;
+    background-image: url("../assets/bgwhitemobile.jpg");
+    background-size: cover;
   }
 
   .home {
-    padding-top: 400px;
+    padding-top: 200px;
   }
   h2 {
     font-size: 40px !important;
+    margin-top: 5px;
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   p {
-    font-size: 12px;
+    font-size: 2vw;
   }
 
   li {
-    font-size: 18px;
+    font-size: 2.5vw;
   }
+
+  p.number {
+    font-size: 20px !important;
+  }
+
   .mouthpiece .project-images {
     display: flex;
     flex-direction: row;
@@ -255,12 +268,19 @@ a {
     max-width: 75% !important;
   }
 
+  .mouthpiece .project-contents p {
+    font-size: 2.5vw;
+  }
   .mouthpiece .project-images .project-image {
     max-width: 100% !important;
   }
   .mouthpiece {
     flex-direction: column;
     align-items: center;
+  }
+  .mouthpiece-image img{
+    border: 5px solid #dddddd;
+    padding: 5px;
   }
 
   #first-image {
@@ -279,13 +299,17 @@ a {
     right: 0;
   }
 
+  .projects {
+    padding-top: 20px;
+  }
+
   .zillow {
     flex-direction: column;
     align-items: center;
   }
 
   .zillow .project-contents p {
-    font-size: 18px;
+    font-size: 2.5vw;
   }
 
   .zillow .project-contents {
@@ -307,7 +331,7 @@ a {
   }
 
   .ecommerce .project-contents p {
-    font-size: 18px;
+    font-size: 2.5vw;
   }
 
   .ecommerce .project-contents {
@@ -320,21 +344,19 @@ a {
   }
 
   .sql .project-contents p {
-    font-size: 18px;
+    font-size: 2.5vw;
   }
 
   .sql .project-contents {
     max-width: 75% !important;
   }
-}
 
-@media only screen and (max-width: 1366px) and (min-width: 980px) {
-  body {
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 50px;
+  svg {
+    height: 48px;
+    width: 48px;
   }
-  p {
-    font-size: 2vw;
+
+  .youtubelogo img {
+    height: 48px !important;
   }
 }

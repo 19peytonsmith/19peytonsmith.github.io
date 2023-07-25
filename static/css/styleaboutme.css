@@ -148,33 +148,41 @@ li {
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1007px) {
   body {
     margin-left: 10%;
     margin-right: 10%;
     padding-bottom: 50px;
+    background-image: url("../assets/bgwhitemobile.jpg");
+    background-size: cover;
+  }
+
+  .container {
+    padding-top: 50px;
   }
 
   li {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   h2 {
     font-size: 25px;
   }
   h1 {
-    font-size: 40px;
-  }
-  p {
-    font-size: 20px;
+    font-size: 50px;
   }
   .text {
     width: 85%;
     margin-left: 0px;
   }
   .text p {
-    font-size: 17.5px;
+    font-size: 12px;
   }
+
+  .left-side p {
+    font-size: 20px;
+  }
+
   .left-side {
     width: 50%;
   }
@@ -182,15 +190,8 @@ li {
     flex-direction: column;
     align-items: center;
   }
-}
 
-@media only screen and (max-width: 1366px) and (min-width: 980px) {
-  body {
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 50px;
-  }
-  .text p {
-    font-size: 14px;
+  .tech-list li::before {
+    font-size: 12px;
   }
 }
