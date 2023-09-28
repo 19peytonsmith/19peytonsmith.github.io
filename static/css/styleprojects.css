@@ -209,6 +209,44 @@ svg:hover {
   transform: translateY(-5px);
 }
 
+.prev-button,
+.next-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: green; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove button border */
+}
+
+
+.arrow {
+  border: solid #90ee90;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 3px;
+  transition: border-color 0.5s;
+}
+
+.rightarrow {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 50px;
+  bottom: 60vh;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.leftarrow {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50px;
+  bottom: 60vh;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
 a {
   display: inline-block;
   position: relative;
@@ -225,12 +263,23 @@ a {
   transform: translateY(-5px);
 }
 
+@media (min-width: 1008px){
+  .button-container{
+    display: none!important
+  }
+}
+
 @media only screen and (max-width: 1007px) {
   body {
     margin-left: 10%;
     margin-right: 10%;
     background-image: url("../assets/bgwhitemobile.jpg");
     background-size: cover;
+  }
+
+  nav{
+    font-size: 40px;
+    font-weight: 500;
   }
 
   .home {
@@ -358,5 +407,9 @@ a {
 
   .youtubelogo img {
     height: 48px !important;
+  }
+
+  .circle-container{
+    display: none!important;
   }
 }

@@ -25,7 +25,6 @@
         </header>
         <div class="projects">
             <div class="mouthpiece">
-        
                 <div class="project-images">
                     <div class="project-image mouthpiece-image" id="first-image" style="max-width: 30%">
                         <img src="static/assets/mp1.png">
@@ -112,7 +111,11 @@
             <div class="circle circle3" onclick="goToPage(3); stopAuto();"></div>
             <!-- Circle 4 -->
             <div class="circle circle4" onclick="goToPage(4); stopAuto();"></div>
-          </div>
+        </div>
+        <div class="button-container">
+            <i class="arrow leftarrow" onClick="changeColor(this); arrowLeft(); stopAuto();"></i>
+            <i class="arrow rightarrow" onClick="changeColor(this); arrowRight(); stopAuto();"></i>
+        </div>
     </div>
 
     <!-- JavaScript to handle click event and navigate to pages -->
@@ -133,6 +136,29 @@
                 }
                 goToPage(currentPage);
             }
+        }
+
+        function changeColor(element) {
+            element.style.borderColor = 'gray';
+
+            setTimeout(function() {
+                element.style.borderColor = '';
+            }, 250);
+        }
+
+        function arrowLeft(){
+            currentPage--;
+            if (currentPage < 1) {
+                currentPage = 4;
+            }
+            goToPage(currentPage);
+        }
+        function arrowRight(){
+            currentPage++;
+            if (currentPage > totalPages) {
+                currentPage = 1;
+            }
+            goToPage(currentPage);
         }
 
         function goToPage(pageNumber) {

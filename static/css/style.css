@@ -98,6 +98,11 @@ a {
 }
 
 @media only screen and (max-width: 1007px) {
+  nav{
+    font-size: 40px;
+    font-weight: 500;
+  }
+
   body {
     margin-left: 10%;
     margin-right: 10%;
@@ -112,12 +117,43 @@ a {
   }
   p {
     font-size: 20px;
+    width: 100%;
   }
   .left-side {
     width: 100%;
   }
 
+  .container{
+    display: block;
+  }
+
   .home {
-    padding-top: 400px;
+    padding-top: 200px;
+  }
+
+  svg{
+    width: 70px;
+    height: 70px;
+  }
+  .home img{
+    margin: auto;
+    border-radius: 10%;
+  }
+
+  .social-links {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .social-links a {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px;
+  }
+
+  .right-side{
+    width: 75%;
+    margin: 50px auto;
   }
 }
