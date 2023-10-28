@@ -76,7 +76,7 @@ p {
   font-size: 1vw;
   color: #cccccc;
   width: 75%;
-  background-color: rgb(51, 39, 39);
+  background-color: rgb(24,25,26,0.3);;
   padding: 20px;
 }
 svg {
@@ -99,7 +99,7 @@ a {
 
 @media only screen and (max-width: 1007px) {
   nav{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
   }
 
