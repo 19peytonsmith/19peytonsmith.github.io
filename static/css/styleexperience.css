@@ -219,7 +219,8 @@ ul {
   }
 
   li {
-    font-size: 12px;
+    font-size: 24px;
+    margin: 12px;
   }
 
   h3 {
@@ -269,7 +270,7 @@ ul {
   }
 
   .tech-list{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .tech-list li::before {
