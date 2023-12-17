@@ -94,7 +94,7 @@ h4{
 header {
   margin-left: 26%;
   margin-right: 26%;
-  margin-top: 65px;
+  margin-top: 55px;
   position: relative;
   margin-bottom: 50px;
 }
@@ -170,7 +170,7 @@ li {
 }
 
 .text li {
-  font-size: 1vw;
+  font-size: 0.85vw;
   margin: 10px;
   color: #cccccc;
   font-family: Manrope, ui-sans-serif, system-ui, -apple-system,

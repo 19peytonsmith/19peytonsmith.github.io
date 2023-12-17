@@ -48,7 +48,7 @@ h1 {
 }
 
 header {
-  margin-top: 65px;
+  margin-top: 55px;
   position: relative;
   margin-bottom: 50px;
 }
@@ -92,7 +92,7 @@ img {
 
 .text p {
   color: #cccccc;
-  font-size: 0.9vw;
+  font-size: 0.85vw;
   margin: 0;
 }
 
@@ -126,6 +126,7 @@ img {
   grid-template-columns: repeat(3, 1fr);
   list-style-type: none;
   padding: 0;
+  margin-bottom: 0px;
 }
 
 .tech-list li::before {
