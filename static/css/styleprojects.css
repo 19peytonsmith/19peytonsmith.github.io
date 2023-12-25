@@ -15,11 +15,10 @@ body {
   background-color: #333;
   background-image: url("../assets/bgwhite.jpg");
   background-blend-mode: color-dodge;
-  margin-left: 26%;
-  margin-right: 26%;
   letter-spacing: 1.5px;
   opacity: 0;
   transition: opacity 1s ease-in-out;
+  max-width: 1000px!important;
 }
 
 .fade-out {
@@ -37,8 +36,13 @@ nav a {
   cursor: pointer;
 }
 
+#tazworks{
+  color: #fff;
+  display: inline;
+}
+
 a:hover {
-  color: #90ee90;
+  color: #90ee90!important;
 }
 
 header {
@@ -66,22 +70,8 @@ h1 {
   margin-left: 5px;
   vertical-align: middle;
 }
-
-.projects {
-  display: flex;
-  position: relative;
-  transition: opacity 0.5s ease-in-out;
-  z-index: -100;
-}
-
 .projects > div {
-  transition: opacity 0.5s ease-in-out;
-}
-
-.mouthpiece {
-  display: flex;
-  opacity: 1;
-  position: absolute;
+  transition: opacity 0.5s ease
 }
 
 .mouthpiece .project-images {
@@ -89,37 +79,8 @@ h1 {
   flex: 0 0 50%;
 }
 
-.mouthpiece .project-image {
-  max-width: 100%;
-  margin-right: 50px;
-}
-
-.mouthpiece .project-contents {
-  flex: 1;
-  max-width: 50% !important;
-  margin-left: -50px;
-}
-
 #second-image {
   margin-top: 10px;
-}
-
-.zillow {
-  display: flex;
-  opacity: 0;
-  position: absolute;
-}
-
-.ecommerce {
-  display: flex;
-  opacity: 0;
-  position: absolute;
-}
-
-.sql {
-  display: flex;
-  opacity: 0;
-  position: absolute;
 }
 
 .project-contents {
@@ -135,6 +96,7 @@ h1 {
   color: #ffffff;
   padding: 0;
   margin: 0;
+  font-size: 25px;
 }
 
 .project-description {
@@ -145,13 +107,12 @@ h1 {
 
 p {
   color: #cccccc;
-  font-size: 1.1vw;
   padding: 0;
   margin: 0;
 }
 .projects img {
   border-radius: 5%;
-  height: 500px;
+  width: 100%;
 }
 
 img.border{
@@ -263,16 +224,16 @@ a {
   transform: translateY(-5px);
 }
 
-@media (min-width: 1008px){
+@media (min-width: 992px){
   .button-container{
     display: none!important
   }
 }
 
-@media only screen and (max-width: 1007px) {
+@media only screen and (max-width: 991px) {
   body {
-    margin-left: 10%;
-    margin-right: 10%;
+    padding-left: 10%!important;
+    padding-right: 10%!important;
     background-image: url("../assets/bgwhitemobile.jpg");
     background-size: cover;
   }
@@ -313,9 +274,6 @@ a {
     width: 100%;
     padding-bottom: 20px;
   }
-  .mouthpiece .project-contents {
-    max-width: 75% !important;
-  }
 
   .mouthpiece .project-contents p {
     font-size: 2.5vw;
@@ -330,10 +288,6 @@ a {
   .mouthpiece-image img{
     border: 5px solid #dddddd;
     padding: 5px;
-  }
-
-  #first-image {
-    margin-left: 100px;
   }
   #second-image {
     margin-top: 0px;
@@ -361,11 +315,6 @@ a {
     font-size: 2.5vw;
   }
 
-  .zillow .project-contents {
-    max-width: 75% !important;
-    padding-bottom: 20px;
-  }
-
   .zillow .project-tech-list {
     flex-wrap: nowrap;
   }
@@ -383,10 +332,6 @@ a {
     font-size: 2.5vw;
   }
 
-  .ecommerce .project-contents {
-    max-width: 75% !important;
-  }
-
   .sql {
     flex-direction: column;
     align-items: center;
@@ -396,8 +341,13 @@ a {
     font-size: 2.5vw;
   }
 
-  .sql .project-contents {
-    max-width: 75% !important;
+  .tazworks {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tazworks .project-contents p{
+    font-size: 2.5vw;
   }
 
   svg {

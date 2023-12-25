@@ -3,9 +3,10 @@
 <head>
     <script type="text/javascript" src=static/js/script.js></script>
     <title>Peyton's Projects</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css">    
     <link rel="stylesheet" type="text/css" href="static/css/styleprojects.css">
 </head>
-<body>
+<body class="container">
     <nav>
         <div class="left-nav-bar">
             <a style="padding-left: 0px" href="/">Home</a>
@@ -24,20 +25,38 @@
             <span class="green-line"></span>
             </h1>
         </header>
-        <div class="projects">
-            <div class="mouthpiece">
-                <div class="project-images">
-                    <div class="project-image mouthpiece-image" id="first-image" style="max-width: 30%">
+        <div id="projects" class="projects">
+            <div class="tazworks d-flex flex-column flex-lg-row">
+                <div class="project-contents col my-auto">
+                    <p class="number">1.</p>
+                    <div class="project-title">
+                        <h2>RubyGem Tazworks API Wrapper</h2>
+                    </div>
+                    <div class="project-description">
+                        <p>Engineered a comprehensive RubyGem API wrapper for an external service - <a style="text-decoration:none; color: #90ee90;" id="tazworks" href="https://docs.developer.tazworks.com/" target="_blank">Tazworks API</a>, with over 30 easily interfaceable methods and classes used within the rental application flow @ Wayhome made to screen tenants and property partners.</p>
+                    </div>
+                    <ul class="project-tech-list left" style="flex-wrap: wrap"><li>Ruby</li><li>Rest Client</li><li>Rspec</li><li>OOP</li><li>VCR API Unit Testing</li></ul>
+                    <a href="https://rubygems.org/gems/tazworks-api" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title>Website</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </a>
+                </div>
+                <div class="project-image col my-auto">
+                    <img src="static/assets/tazworks.png">
+                </div>
+            </div>
+            <div class="mouthpiece d-none flex-column flex-lg-row">
+                <div class="project-images col my-auto">
+                    <div class="project-image mouthpiece-image" id="first-image">
                         <img src="static/assets/mp1.png">
                     </div>
-                    <div class="project-image mouthpiece-image" id="second-image" style="max-width: 30%;">
+                    <div class="project-image mouthpiece-image" id="second-image">
                         <img src="static/assets/mp2.png">
                     </div>
                 </div>
-                <div style="max-width: 50%" class="project-contents">
-                    <p class="number">1.</p>
+                <div class="project-contents col my-auto">
+                    <p class="number">2.</p>
                     <div class="project-title">
-                        <h2 style="font-size:2.5vw">Mouthpiece</h2>
+                        <h2>Mouthpiece</h2>
                     </div>
                     <div class="project-description">
                         <p>A social media app whose motivation is seamlessly sharing posts, pictures, and videos for a community of those interested in sports. The app has basic social media functionality with some geolocation features.</p>
@@ -48,11 +67,11 @@
                     </a>
                 </div>
             </div>
-            <div class="zillow">
-                <div style="padding-right: 50px;" class="project-contents">
-                    <p class="number">2.</p>
+            <div class="zillow d-none flex-column flex-lg-row">
+                <div class="project-contents col my-auto">
+                    <p class="number">3.</p>
                     <div class="project-title">
-                        <h2 style="font-size:1.6vw">Zillow Guessing Game</h2>
+                        <h2>Zillow Guessing Game</h2>
                     </div>
                     <div class="project-description">
                         <p>Ongoing personal Python web-app project where it fetches a random Zillow listing, displays the info alongside a gallery of all of the pictures and has the user guess the price. </p>
@@ -62,18 +81,18 @@
                         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                     </a>
                 </div>
-                <div class="project-image">
+                <div class="project-image col my-auto">
                     <img class="border" src="static/assets/zillow.png">
                 </div>
             </div>
-            <div class="ecommerce">
-                <div style="flex: 1.5;" class="project-image">
-                    <img class="border" style="height:350px; margin-top: 50px;" src="static/assets/ecommerce.png">
+            <div class="ecommerce d-none flex-column flex-lg-row">
+                <div class="project-image col my-auto">
+                    <img class="border" src="static/assets/ecommerce.png">
                 </div>
-                <div style="max-width: 40%; padding-left: 20px;" class="project-contents">
-                    <p class="number">3.</p>
+                <div class="project-contents col my-auto">
+                    <p class="number">4.</p>
                     <div class="project-title">
-                        <h2 style="font-size:1.8vw">C# eCommerce app</h2>
+                        <h2>C# eCommerce app</h2>
                     </div>
                     <div class="project-description">
                         <p>Starting from a basic console application, I've transformed this project into a 2-sided admin/customer full-stack desktop application with a file system-based database and a working web API to query data used to perform CRUD operations on products within the database. </p>
@@ -87,31 +106,28 @@
                     </a>
                 </div>
             </div>
-            <div class="sql">
-                <div style="padding-right: 50px;" style="max-width: 40%" class="project-contents">
-                    <p class="number">4.</p>
+            <div class="sql d-none flex-column flex-lg-row">
+                <div class="project-contents col my-auto">
+                    <p class="number">5.</p>
                     <div class="project-title">
-                        <h2 style="font-size:2vw">SQL Multiplayer Game Database</h2>
+                        <h2>SQL Multiplayer Game Database</h2>
                     </div>
                     <div class="project-description">
                         <p>Leveraged SQL to plot entities associated to the game including user information, friend data, map/score statistics, and tournament functionality. I also optimized and developed SQL scripts and queries to yield data from various levels of the database architecture.</p>
                     </div>
                     <ul class="project-tech-list left" style="flex-wrap: wrap"><li>SQL</li><li>mySQL</li></ul>
                 </div>
-                <div style="flex: 1.2;" class="project-image">
+                <div class="project-image col my-auto">
                     <img class="border" src="static/assets/sql.png">
                 </div>
             </div>
         </div>
-        <div class="circle-container">
-            <!-- Circle 1 -->
+        <div id="circle-container" class="circle-container">
             <div class="circle active circle1" onclick="goToPage(1); stopAuto();"></div>
-            <!-- Circle 2 -->
             <div class="circle circle2" onclick="goToPage(2); stopAuto();"></div>
-            <!-- Circle 3 -->
             <div class="circle circle3" onclick="goToPage(3); stopAuto();"></div>
-            <!-- Circle 4 -->
             <div class="circle circle4" onclick="goToPage(4); stopAuto();"></div>
+            <div class="circle circle5" onclick="goToPage(5); stopAuto();"></div>
         </div>
         <div class="button-container">
             <i class="arrow leftarrow" onClick="changeColor(this); arrowLeft(); stopAuto();"></i>
@@ -122,13 +138,11 @@
     <!-- JavaScript to handle click event and navigate to pages -->
     <script>
         var auto = true;
-
         function stopAuto(){
             auto = false;
         }
-        var currentPage = 1; // Initial page
-        var totalPages = 4; // Total number of pages
-        // Function to go to the next page
+        var currentPage = 1;
+        var totalPages = 5;
         function nextPage() {
             if(auto){
                 currentPage++;
@@ -150,7 +164,7 @@
         function arrowLeft(){
             currentPage--;
             if (currentPage < 1) {
-                currentPage = 4;
+                currentPage = 5;
             }
             goToPage(currentPage);
         }
@@ -163,51 +177,43 @@
         }
 
         function goToPage(pageNumber) {
-            // Perform page navigation based on pageNumber
-            // Sorry for the ugly JavaScript code :(
+            document.querySelectorAll('#projects > div').forEach(element => {
+                element.style.setProperty("display", "none", "important")
+                element.style.setProperty("opacity", "0", "important")
+            });
+            document.querySelectorAll('#circle-container > div').forEach(element => {
+                element.classList.remove('active');
+            });
             switch (pageNumber) {
-            case 1:
-                document.querySelector('.mouthpiece').style.opacity = '1';
-                document.querySelector('.zillow').style.opacity = '0';
-                document.querySelector('.ecommerce').style.opacity = '0';
-                document.querySelector('.sql').style.opacity = '0';
-                document.querySelector('.circle1').classList.add('active');
-                document.querySelector('.circle2').classList.remove('active');
-                document.querySelector('.circle3').classList.remove('active');
-                document.querySelector('.circle4').classList.remove('active');
-                break;
-            case 2:
-                document.querySelector('.mouthpiece').style.opacity = '0';
-                document.querySelector('.zillow').style.opacity = '1';
-                document.querySelector('.ecommerce').style.opacity = '0';
-                document.querySelector('.sql').style.opacity = '0';
-                document.querySelector('.circle2').classList.add('active');
-                document.querySelector('.circle1').classList.remove('active');
-                document.querySelector('.circle3').classList.remove('active');
-                document.querySelector('.circle4').classList.remove('active');
-                break;
-            case 3:
-                document.querySelector('.mouthpiece').style.opacity = '0';
-                document.querySelector('.zillow').style.opacity = '0';
-                document.querySelector('.ecommerce').style.opacity = '1';
-                document.querySelector('.sql').style.opacity = '0';
-                document.querySelector('.circle3').classList.add('active');
-                document.querySelector('.circle1').classList.remove('active');
-                document.querySelector('.circle2').classList.remove('active');
-                document.querySelector('.circle4').classList.remove('active');
-                break;
-            case 4:
-                document.querySelector('.mouthpiece').style.opacity = '0';
-                document.querySelector('.zillow').style.opacity = '0';
-                document.querySelector('.ecommerce').style.opacity = '0';
-                document.querySelector('.sql').style.opacity = '1';
-                document.querySelector('.circle4').classList.add('active');
-                document.querySelector('.circle1').classList.remove('active');
-                document.querySelector('.circle2').classList.remove('active');
-                document.querySelector('.circle3').classList.remove('active');
-            default:
-                break;
+                case 1:
+                    document.querySelector('.tazworks').style.setProperty("display", "flex", "important")
+                    setTimeout(function(){document.querySelector('.tazworks').style.setProperty("opacity", "1", "important")}, 100)
+                    document.querySelector('.circle1').classList.add('active');
+                    break;
+                case 2:
+                    document.querySelector('.mouthpiece').style.setProperty("display", "flex", "important")
+                    setTimeout(function(){document.querySelector('.mouthpiece').style.setProperty("opacity", "1", "important")}, 100)
+                    document.querySelector('.circle2').classList.add('active');
+                    break;
+                case 3:
+                    document.querySelector('.zillow').style.setProperty("display", "flex", "important")
+                    setTimeout(function(){document.querySelector('.zillow').style.setProperty("opacity", "1", "important")}, 100)
+                    document.querySelector('.circle3').classList.add('active');
+                    break;
+                case 4:
+                    document.querySelector('.ecommerce').style.setProperty("display", "flex", "important")
+                    setTimeout(function(){document.querySelector('.ecommerce').style.setProperty("opacity", "1", "important")}, 100)
+                    document.querySelector('.circle4').classList.add('active');
+                    break;
+                case 5:
+                    document.querySelector('.sql').style.setProperty("display", "flex", "important")
+                    setTimeout(function(){document.querySelector('.sql').style.setProperty("opacity", "1", "important")}, 100)
+                    document.querySelector('.circle5').classList.add('active');
+                    break;
+                default:
+                    break;
             }
+
         }
         // Automatically go to the next page after 4 seconds
         setInterval(nextPage, 4000);
